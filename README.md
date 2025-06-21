@@ -46,21 +46,21 @@ A Spring Boot API that executes SQL queries from `.sql` files in a local `/queri
 ## Usage
 
 ### API Endpoint
-
+ ```
 GET /execute-query?query_identifier={queryName}
-
+ ```
 - {queryName} — the name of the SQL file without the .sql extension.
 
 ### Example
 
 Assuming you have a query file get_user_data.sql in the query directory:
-
+```
 SELECT id, name FROM users;
-
+```
 Request:
-
+```
 GET /execute-query?query_identifier=get_user_data
-
+```
 Response:
 
  ```
