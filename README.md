@@ -33,11 +33,12 @@ A Spring Boot API that executes SQL queries from `.sql` files in a local `/queri
    git clone https://github.com/Takibalu/DatabaseQueryAPI.git
 
 2. Configure your database connection in src/main/resources/application.properties:
-```
+
+   ```
    spring.datasource.url=jdbc:postgresql:{your_database_url}  
    spring.datasource.username={your_db_username} 
    spring.datasource.password={your_db_password}
-```
+   ```
 3. Place your SQL query files (.sql) in the /queries directory.
 
 ---
